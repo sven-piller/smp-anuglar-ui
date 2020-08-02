@@ -1,40 +1,31 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'ui-table',
+  selector: "ui-table",
   template: `
-    <table>
-      <thead class="ui-table-head">
+    <table class="table table-striped table-hover">
+      <caption>
+        List of users
+      </caption>
+      <thead class="thead-dark">
         <tr>
-          <th *ngFor="let head of headers">{{head}}</th>
+          <th *ngFor="let head of headers" scope="col">{{ head }}</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let row of data">
-          <td *ngFor="let el of row">{{el}}</td>
+          <td *ngFor="let el of row">{{ el }}</td>
         </tr>
       </tbody>
     </table>
   `,
-  styles: [`
-    .ui-table-head {
-        background-color: #000000;
-        color: #ffffff;
-    }
-    th {
-      width: 100px;
-    }`,
-  'td { text-align: center; }'
-  ],
+  styles: ["td, th { text-align: center; }"],
 })
 export class TableComponent implements OnInit {
-
   @Input() headers: string[];
   @Input() data: any[][];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

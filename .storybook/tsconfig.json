@@ -1,6 +1,10 @@
 {
   "extends": "../tsconfig.base.json",
+  "angularCompilerOptions": {
+    "enableIvy": false
+  },
   "compilerOptions": {
+
     "types": [
       "node"
     ]

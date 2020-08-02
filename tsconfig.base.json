@@ -26,6 +26,10 @@
       "table": [
         "dist/table/table",
         "dist/table"
+      ],
+      "datepicker": [
+        "dist/datepicker/datepicker",
+        "dist/datepicker"
       ]
     }
   }

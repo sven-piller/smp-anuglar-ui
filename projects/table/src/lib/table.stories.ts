@@ -1,28 +1,31 @@
-import { TableComponent } from './table.component';
+import { TableComponent } from "./table.component";
 
 export default {
-  title: 'UiTable',
+  title: "UiTable",
   component: TableComponent,
   excludeStories: /.*Data$/,
 };
 
 export const tableData = {
-  headers: ['A', 'B'],
-  data: [[1, 2], [3, 4]],
+  headers: ["A", "B"],
+  data: [
+    [1, 2],
+    [3, 4],
+    [5, 6],
+  ],
 };
 
 export const Normal = () => ({
   component: TableComponent,
   props: {
     ...tableData,
-    headers: null
+    headers: null,
   },
 });
 
 export const WithHeader = () => ({
   component: TableComponent,
   props: {
-    ...tableData
+    ...tableData,
   },
 });
-

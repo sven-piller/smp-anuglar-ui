@@ -18,6 +18,12 @@
     },
     {
       "path": "./projects/table/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/datepicker/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/datepicker/tsconfig.spec.json"
     }
 ]
 }

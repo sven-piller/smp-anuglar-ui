@@ -30,6 +30,10 @@
       "datepicker": [
         "dist/datepicker/datepicker",
         "dist/datepicker"
+      ],
+      "ui": [
+        "dist/ui/ui",
+        "dist/ui"
       ]
     }
   }
